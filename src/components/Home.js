@@ -5,7 +5,7 @@ const Home = () => {
     <div className="pageContainer">
       <div className="homeHeader">
         <div className="imcLogo">
-           <h2>TOWN CENTER FITNESS</h2>
+            <img src={require("./img/TCF_CLEAN.svg")} />
           <div className="topTag">Bringing modern fitness to Southwood.</div>
         </div>
       </div>
