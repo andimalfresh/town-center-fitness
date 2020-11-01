@@ -4,26 +4,69 @@
   height: 100vh;
   width: 100vw;
   text-align: center;
-  background-color: grey;
-  padding-top: 50px;
+  background-color: white;
+  padding: 50px;
   .pageContainer {
+    padding: 50px;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: left;
+    .mockupImage {
+      width:100%;
+    }
+    .Wave-crest,.Wave-crest2,.Wave-crest3, .Wave-crest4 {
+      z-index: 3;
+      height:20px;
+    }
+    .Wave-crest {
+      width: 100%;
+      fill: #b0dcea;
+      padding: 0px;
+      margin: 0px;
+    }
+    .Wave-crest2 {
+      width: 100%;
+      fill: #b0dcea;
+      padding: 0px;
+      margin: 0px;
+      transform: scaleX(-1);
+    }
+    .Wave-crest3 {
+      display: inline;
+      width: 100%;
+      fill: #b0dcea;
+      padding: 0px;
+      margin: 0px;
+      /* flip vertically */
+      transform: scaleY(-1);
+    }
+    .Wave-crest4 {
+      display: inline;
+      width: 100%;
+      fill: #b0dcea;
+      padding: 0px;
+      margin: 0px;
+      transform: scaleX(-1);
+    }
     .homeHeader {
       display:flex;
       justify-content: center;
       background-color: White;
       background-size: cover;
       background-position: center;
-      height: 400px;
-      width: 100%;
+      height: 300px;
       .tcfLogo {
-        height: 400px;
+        height: 300px;
       }
+     .contextElement {
+       display: flex;
+       justify-content: center;
+       text-align: left;
+       flex-direction: column;
+     }
     }
   }
   .socialDiv {
