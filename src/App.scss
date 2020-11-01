@@ -10,17 +10,19 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    flex-direction: column;
     text-align: left;
     .homeHeader {
-      background-image: url("components/img/tcf_mockup.jpg");
+      display:flex;
+      justify-content: center;
+      background-color: White;
       background-size: cover;
       background-position: center;
       height: 400px;
       width: 100%;
-      .imcLogo {
-        border-radius: 25px;
-        color:white;
+      .tcfLogo {
+        height: 400px;
       }
     }
   }
