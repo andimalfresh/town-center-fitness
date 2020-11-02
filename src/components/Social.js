@@ -1,6 +1,10 @@
 import React from "react";
 import { Button, Modal, Form } from "react-bootstrap";
 import "../App.scss";
+import facebook from "./img/icons/001-facebook.svg"
+import twitter from "./img/icons/002-twitter.svg"
+import linkedIn from "./img/icons/010-linkedin.svg"
+import youTube from "./img/icons/008-youtube.svg"
 
 function ModalForContact(props) {
   return (
@@ -72,27 +76,27 @@ const Social = () => {
             <a href="http://facebook.com">
               <img
                 className="socialImg"
-                src={require("./img/icons/001-facebook.svg")}
+                src={facebook}
               />
             </a>
             <a href="http://facebook.com">
               <img
                 className="socialImg"
-                src={require("./img/icons/002-twitter.svg")}
-              />
-            </a>
-            <a href="http://facebook.com">
-              {" "}
-              <img
-                className="socialImg"
-                src={require("./img/icons/011-instagram.svg")}
+                src={twitter}
               />
             </a>
             <a href="http://facebook.com">
               {" "}
               <img
                 className="socialImg"
-                src={require("./img/icons/008-youtube.svg")}
+                src={linkedIn}
+              />
+            </a>
+            <a href="http://facebook.com">
+              {" "}
+              <img
+                className="socialImg"
+                src={youTube}
               />
             </a>
           </div>

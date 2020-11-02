@@ -1,21 +1,22 @@
 .App {
-  display:flex;
-  flex-direction: column;
   height: 100vh;
   width: 100vw;
   text-align: center;
   background-color: white;
-  padding: 50px;
   .pageContainer {
     padding: 50px;
-    height: 100%;
-    width: 100%;
+    height: 80vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: left;
     .mockupImage {
       width:100%;
+    }
+    .svgContainer {
+      height: 10%;
+      width: 10%;
     }
     .Wave-crest,.Wave-crest2,.Wave-crest3, .Wave-crest4 {
       z-index: 3;
@@ -70,7 +71,7 @@
     }
   }
   .socialDiv {
-
+    height: 20vh;
     .socialWrapper {
       background-color: #ceede0;
       color: #207ea9;
@@ -95,11 +96,7 @@
         }
       }
       .modalButton {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
         .contactButton {
           display:flex;
           flex-direction: column;
@@ -124,3 +121,9 @@
     }
   }
 }
+
+@media only screen and (min-width: 1025px) {
+    .svgContainer{
+      height: 600px;
+    }
+  }
