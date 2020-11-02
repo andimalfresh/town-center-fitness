@@ -55,7 +55,7 @@ const Social = () => {
         <button id="connectWithUs" className="contactButton" onClick={() => setModalShow(true)}>
           Contact Us Today
         </button>
-        <span>Contact us today for more information.</span>
+        <div>Contact us today for more information.</div>
         <ModalForContact show={modalShow} onHide={() => setModalShow(false)} />
       </div>
       <div className="socialWrapper">
@@ -69,7 +69,7 @@ const Social = () => {
               <a href="/">HOME </a>
             </div>
             <div className="socialButton">
-              <a href="/contact">CONTACT</a>
+              <a onClick={() => setModalShow(true)}>CONTACT</a>
             </div>
           </div>
           <div className="socialIcons">

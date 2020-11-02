@@ -4,17 +4,39 @@
   text-align: center;
   background-color: white;
   .pageContainer {
-
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: left;
-    .mockupImage {
-      width:100%;
+    .gymSvg {
+      max-height: 200px;
     }
-    .Wave-crest,.Wave-crest2,.Wave-crest3, .Wave-crest4 {
+    .mockupContainer {
+      display: flex;
+      justify-content: center;
+      .mockupImage {
+        width: 100%;
+      }
+    }
+    .contextElement {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      flex-direction: column;
+      font-size: 16pt;
+      background-color: #b0dcea;
+      padding: 50px;
+      .blueWaveText {
+        font-size: 1.1em;
+        color: #207ea9;
+      }
+    }
+    .Wave-crest,
+    .Wave-crest2,
+    .Wave-crest3,
+    .Wave-crest4 {
       z-index: 3;
-      height:20px;
+      height: 20px;
     }
     .Wave-crest {
       width: 100%;
@@ -47,7 +69,7 @@
       transform: scaleX(-1);
     }
     .homeHeader {
-      display:flex;
+      display: flex;
       justify-content: center;
       background-color: White;
       background-size: cover;
@@ -56,16 +78,29 @@
       .tcfLogo {
         height: 300px;
       }
-     .contextElement {
-       display: flex;
-       justify-content: center;
-       text-align: left;
-       flex-direction: column;
-     }
     }
   }
   .socialDiv {
     height: 20vh;
+    .modalButton {
+      padding-top: 50px;
+      padding-bottom: 25px;
+      .modalButton Button {
+        width: 2000px;
+      }
+    }
+    .contactButton {
+      background-color: #207ea9;
+      border-color: #207ea9;
+      padding: 10px;
+      border-radius: 25px;
+      border-style: solid;
+      color: white;
+    }
+    .contactButton:hover {
+      color: #207ea9;
+      background-color: #d4d1ca;
+    }
     .socialWrapper {
       background-color: #ceede0;
       color: #207ea9;
@@ -75,6 +110,19 @@
         justify-content: space-around;
         align-items: center;
         padding: 20px;
+        .contactLinks {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          .socialButton {
+          padding-left: 25px;
+          padding-right:25px;
+          font-weight: bold;
+          a:link, a:visited {
+            text-decoration: none;
+          }
+          }
+        }
         .socialIcons {
           width: 25%;
           color: #207ea9;
@@ -89,35 +137,9 @@
           margin: 15px;
         }
       }
-      .modalButton {
-
-        .contactButton {
-          display:flex;
-          flex-direction: column;
-          
-          justify-content: center;
-          text-align: center;
-          background-color: #207ea9;
-          border-color: #207ea9;
-          padding: 10px;
-          border-radius: 25px;
-          border-style: solid;
-          color: white;
-          .contactButton:hover {
-            color: #207ea9;
-            background-color: #d4d1ca;
-          }
-        }
-        .modalButton Button {
-          width: 200px;
-        }
-      }
     }
   }
 }
 
 @media only screen and (min-width: 1025px) {
-    .svgContainer{
-      height: 600px;
-    }
-  }
+}
