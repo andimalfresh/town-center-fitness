@@ -4,19 +4,13 @@
   text-align: center;
   background-color: white;
   .pageContainer {
-    padding: 50px;
-    height: 80vh;
-    width: 100vw;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: left;
     .mockupImage {
       width:100%;
-    }
-    .svgContainer {
-      height: 10%;
-      width: 10%;
     }
     .Wave-crest,.Wave-crest2,.Wave-crest3, .Wave-crest4 {
       z-index: 3;

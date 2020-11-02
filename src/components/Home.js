@@ -23,7 +23,7 @@ const Home = () => {
           <path d="M100 100 H0 V100 H0 V50 C 33.3333 100, 66.6666 0, 100 50"></path>
         </svg>
         <div className="contextElement">
-          <img src={gym1} alt="test" />
+          {/* <img src={gym1} alt="test" /> */}
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -41,16 +41,17 @@ const Home = () => {
           <path d="M100 100 H0 V100 H0 V50 C 33.3333 100, 66.6666 0, 100 50"></path>
         </svg>
         <div className="mockupContainer">
-        <img src={mockup} className="mockupImage" />
+          <img src={mockup} className="mockupImage" />
         </div>
         <div className="svgContainer">
-        <img src={gym1} />
+          {/* <img src={gym1} /> */}
         </div>
         <div className="svgContainer">
-        <img src={gym2} />
+          {/* <img src={gym2} /> */}
         </div>
+
       </div>
-      
+      <Social />
     </>
   );
 };
