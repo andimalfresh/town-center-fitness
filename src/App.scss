@@ -87,6 +87,10 @@
   }
   .socialDiv {
     height: 20vh;
+    .formikDiv {
+      display: flex;
+      flex-direction: column;
+    }
     .modalButton {
       padding-top: 50px;
       padding-bottom: 25px;
