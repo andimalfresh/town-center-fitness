@@ -16,7 +16,7 @@ const Home = () => {
         </div>
         <div className="contextElement">
           <img className="gymSvg" src={gym1} alt="test" />
-          <h1>ADD CATCHY HEADING</h1>
+          <h2>ADD CATCHY HEADING</h2>
           <p className="blueWaveText">
             Town Center Fitness is Southwood's newest modern gym working in
             colloboration with MSK industry leaders JointStrong. The fitness
@@ -29,7 +29,7 @@ const Home = () => {
         </div>
         <div className="contextElement">
           <img className="gymSvg" src={workout} alt="test" />
-          <h1>HERE WHEN YOU NEED US</h1>
+          <h2>HERE WHEN YOU NEED US</h2>
           <p className="blueWaveText">
             Something about 24 hour access and accessibility, online classes and
             jS being there for you whenever you need it.
@@ -41,7 +41,7 @@ const Home = () => {
 
         <div className="contextElement">
           <img className="gymSvg" src={gym2} alt="test" />
-          <h1>SOME OTHER CLICHE STATEMENT</h1>
+          <h2>SOME OTHER CLICHE STATEMENT</h2>
           <p className="blueWaveText">
             Our facility provides a full gym with weight machines, free weights,
             functional fitness equipment, spin classes and MSK coaching in the
