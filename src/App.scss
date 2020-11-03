@@ -115,6 +115,10 @@
         justify-content: space-around;
         align-items: center;
         padding: 20px;
+        .socialLogo {
+          height: 100px;
+          padding-bottom: 15px;
+        }
         .contactLinks {
           display: flex;
           justify-content: center;
