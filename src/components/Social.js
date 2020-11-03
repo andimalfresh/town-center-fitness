@@ -91,10 +91,11 @@ const Social = () => {
               />
               <label className="errorLabel">{errors.message && touched.message && errors.message}</label>
               <label className="fieldLabel">Message</label>
-              <input
+              <textarea
                 placeholder="Type a message"
                 type="message"
                 name="message"
+                rows="4"
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.message}
