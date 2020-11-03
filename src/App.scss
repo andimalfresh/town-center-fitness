@@ -3,9 +3,10 @@
   width: 100vw;
   text-align: center;
   background-color: white;
-  a:link, a:visited {
+  a:link,
+  a:visited {
     text-decoration: none;
-    color: #207ea9
+    color: #207ea9;
   }
   .pageContainer {
     display: flex;
@@ -81,21 +82,36 @@
       height: 300px;
       .tcfLogo {
         height: 300px;
-      
       }
     }
   }
   .socialDiv {
-    height: 20vh;
-    .formikDiv {
-      display: flex;
-      flex-direction: column;
+      .formikDiv {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        // background-color: green;
+        margin-left: 10%;
+        margin-right: 10%;
+        .fieldLabel {
+          color: #207ea9;
+          font-weight: bold;
+        }
+        .submitButtonDiv {
+          display: flex;
+          justify-content: center;
+          .contactButton {
+            width: 200px;
+            margin: 10px;
+          }
+        }
+      
     }
     .modalButton {
       padding-top: 50px;
       padding-bottom: 25px;
       .modalButton Button {
-        width: 2000px;
+        width: 200px;
       }
     }
     .contactButton {
@@ -128,12 +144,13 @@
           justify-content: center;
           flex-direction: row;
           .socialButton {
-          padding-left: 25px;
-          padding-right:25px;
-          font-weight: bold;
-          a:link, a:visited {
-            text-decoration: none;
-          }
+            padding-left: 25px;
+            padding-right: 25px;
+            font-weight: bold;
+            a:link,
+            a:visited {
+              text-decoration: none;
+            }
           }
         }
         .socialIcons {
@@ -157,8 +174,8 @@
 @media only screen and (min-width: 1025px) {
   .App {
     .pageContainer {
-    padding-left: 15%;
-    padding-right: 15%
-  }
+      padding-left: 15%;
+      padding-right: 15%;
+    }
   }
 }

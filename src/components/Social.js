@@ -12,6 +12,7 @@ import tcflogo from "./img/TCF_CLEAN.svg";
 const Social = () => {
   const [modalShow, setModalShow] = React.useState(false);
   const handleShowContact = () => {
+    console.log("election Jesus");
     setModalShow(true);
   };
 
@@ -21,18 +22,18 @@ const Social = () => {
         <button
           id="connectWithUs"
           className="contactButton"
-          onClick={() => handleShowContact}
+          onClick={() => setModalShow(true)}
         >
           Contact Us Today
         </button>
         <div>Contact us today for more information.</div>
-
+        {modalShow ? (
         <Formik
           initialValues={{ name: "", email: "", phone: "", message: "" }}
           validate={(values) => {
             const errors = {};
             if (!values.email) {
-              errors.email = "Required";
+              errors.email = "An Email is Required";
             } else if (
               !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
             ) {
@@ -57,8 +58,9 @@ const Social = () => {
             isSubmitting,
             /* and other goodies */
           }) => (
+            <div>
             <form onSubmit={handleSubmit} className="formikDiv">
-              <label>Name</label>
+              <label className="fieldLabel">Name</label>
               <input
                 type="name"
                 name="name"
@@ -68,9 +70,9 @@ const Social = () => {
                 value={values.name}
               />
               {errors.name && touched.name && errors.name}
-              <label>Email</label>
+              <label className="fieldLabel">Email</label>
               <input
-              placeholder="Your Email"
+                placeholder="Your Email"
                 type="email"
                 name="email"
                 onChange={handleChange}
@@ -78,9 +80,9 @@ const Social = () => {
                 value={values.email}
               />
               {errors.email && touched.email && errors.email}
-              <label>Phone</label>
+              <label className="fieldLabel">Phone</label>
               <input
-               placeholder="Phone #"
+                placeholder="Phone #"
                 type="phone"
                 name="phone"
                 onChange={handleChange}
@@ -88,9 +90,9 @@ const Social = () => {
                 value={values.phone}
               />
               {errors.phone && touched.phone && errors.phone}
-              <label>Message</label>
+              <label className="fieldLabel">Message</label>
               <input
-              placeholder="Type a message"
+                placeholder="Type a message"
                 type="message"
                 name="message"
                 onChange={handleChange}
@@ -98,12 +100,19 @@ const Social = () => {
                 value={values.message}
               />
               {errors.message && touched.message && errors.message}
-              <button type="submit" disabled={isSubmitting}>
-                Submit
-              </button>
+              <div className="submitButtonDiv">
+                <button
+                  className="contactButton"
+                  type="submit"
+                  disabled={isSubmitting}
+                >
+                  Submit
+                </button>
+              </div>
             </form>
+            </div>
           )}
-        </Formik>
+        </Formik> ): null} 
       </div>
       <div className="socialWrapper">
         <div className="socialContact">
