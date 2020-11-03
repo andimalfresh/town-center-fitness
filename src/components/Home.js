@@ -14,17 +14,9 @@ const Home = () => {
         <div className="homeHeader">
           <img src={gymLogo} className="tcfLogo" />
         </div>
-        <svg
-          className="Wave-crest4"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          version="1.1"
-          style={{ height: "40px" }}
-        >
-          <path d="M100 100 H0 V100 H0 V50 C 33.3333 100, 66.6666 0, 100 50"></path>
-        </svg>
         <div className="contextElement">
           <img className="gymSvg" src={gym1} alt="test" />
+          <h1>ADD CATCHY HEADING</h1>
           <p className="blueWaveText">
             Town Center Fitness is Southwood's newest modern gym working in
             colloboration with MSK industry leaders JointStrong. The fitness
@@ -35,29 +27,21 @@ const Home = () => {
             in the new you.
           </p>
         </div>
-        <svg
-          className="Wave-crest3"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          version="1.1"
-          style={{ height: "40px" }}
-        >
-          <path d="M100 100 H0 V100 H0 V50 C 33.3333 100, 66.6666 0, 100 50"></path>
-        </svg>
+        <div className="contextElement">
+          <img className="gymSvg" src={workout} alt="test" />
+          <h1>HERE WHEN YOU NEED US</h1>
+          <p className="blueWaveText">
+            Something about 24 hour access and accessibility, online classes and
+            jS being there for you whenever you need it.
+          </p>
+        </div>
         <div className="mockupContainer">
           <img src={mockup} className="mockupImage" />
         </div>
-        <svg
-          className="Wave-crest4"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          version="1.1"
-          style={{ height: "40px" }}
-        >
-          <path d="M100 100 H0 V100 H0 V50 C 33.3333 100, 66.6666 0, 100 50"></path>
-        </svg>
+
         <div className="contextElement">
           <img className="gymSvg" src={gym2} alt="test" />
+          <h1>SOME OTHER CLICHE STATEMENT</h1>
           <p className="blueWaveText">
             Our facility provides a full gym with weight machines, free weights,
             functional fitness equipment, spin classes and MSK coaching in the
@@ -66,15 +50,6 @@ const Home = () => {
             healthy and safe.
           </p>
         </div>
-        <svg
-          className="Wave-crest3"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          version="1.1"
-          style={{ height: "40px" }}
-        >
-          <path d="M100 100 H0 V100 H0 V50 C 33.3333 100, 66.6666 0, 100 50"></path>
-        </svg>
         <div className="mockupContainer">
           <img src={gymImage} className="mockupImage" />
         </div>

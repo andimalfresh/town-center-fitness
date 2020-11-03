@@ -69,7 +69,7 @@ const Social = () => {
                 onBlur={handleBlur}
                 value={values.name}
               />
-              {errors.name && touched.name && errors.name}
+              <label className="errorLabel">{errors.message && touched.message && errors.message}</label>
               <label className="fieldLabel">Email</label>
               <input
                 placeholder="Your Email"
@@ -79,7 +79,7 @@ const Social = () => {
                 onBlur={handleBlur}
                 value={values.email}
               />
-              {errors.email && touched.email && errors.email}
+              <label className="errorLabel">{errors.message && touched.message && errors.message}</label>
               <label className="fieldLabel">Phone</label>
               <input
                 placeholder="Phone #"
@@ -89,7 +89,7 @@ const Social = () => {
                 onBlur={handleBlur}
                 value={values.phone}
               />
-              {errors.phone && touched.phone && errors.phone}
+              <label className="errorLabel">{errors.message && touched.message && errors.message}</label>
               <label className="fieldLabel">Message</label>
               <input
                 placeholder="Type a message"
@@ -99,7 +99,7 @@ const Social = () => {
                 onBlur={handleBlur}
                 value={values.message}
               />
-              {errors.message && touched.message && errors.message}
+              <label className="errorLabel">{errors.message && touched.message && errors.message}</label>
               <div className="submitButtonDiv">
                 <button
                   className="contactButton"
