@@ -19,15 +19,15 @@ const Home = () => {
           <img src={gymLogo} className="tcfLogo" />
         </div>
         <div className="videoElement" style={{ backgroundColor: "#CCF2F5" }}>
-          <p className="blueWaveText">
+          <div className="blueWaveText">
             <h2>Your New Southwood Fitness Center</h2>
-            Town Center Fitness is excited to announce its grand Opening
-            December 5th! Below you will find resources and information about
+            Town Center Fitness is excited to announce its <span className="boldText">Grand Opening
+            December 5th!</span> Below you will find resources and information about
             the developing changes and additions to your Southwood neighborhood
             fitness center. Feel free to reach out to us on social media or
             using the contact form below, and we will be happy to answer any
             questions you make have.
-          </p>
+          </div>
           <Player fluid autoPlay src={vid}>
             <LoadingSpinner />
           </Player>
@@ -35,20 +35,20 @@ const Home = () => {
         <div className="contextElement" style={{ backgroundColor: "#E2DFDF" }}>
           <img className="gymSvg" src={gym1} alt="test" />
 
-          <p className="blueWaveText">
+          <div className="blueWaveText">
             <h2>Pardon Our Dust</h2>
             While are remaining open to our members 24/7, we are currently
             making improvements for our December 5th, 2020 Grand Opening. We
             cant wait to show you all the our new improvments and rennovations
             to offer you the best neighborhood fitness experience.
-          </p>
+          </div>
         </div>
         <div className="mockupContainer">
           <img src={mockup} className="mockupImage" />
         </div>
 
         <div className="contextElement" style={{ backgroundColor: "#CCF2F5" }}>
-          <p className="blueWaveText">
+          <div className="blueWaveText">
             <h2>New Look, New Classes, New Support</h2>
             Town Center Fitness is Southwood's newest modern gym working in
             colloboration with MSK industry leaders JointStrong. The fitness
@@ -57,7 +57,7 @@ const Home = () => {
             MSK and mobility coaching. Stop by, give us a call or send us a
             message and see how Town Center Fitness can help bring out the best
             in you.
-          </p>
+          </div>
         </div>
 
         <div className="videoElement">
@@ -67,7 +67,7 @@ const Home = () => {
         </div>
 
         <div className="contextElement" style={{ backgroundColor: "#DEEad7" }}>
-          <p className="blueWaveText">
+          <div className="blueWaveText">
             <h2>We Would Love to Hear From You</h2>
             Our facility provides a full gym with weight machines, free weights,
             functional fitness equipment, spin classes and MSK coaching in the
@@ -76,7 +76,7 @@ const Home = () => {
             healthy and safe. We love feedback to help deliver our guest and
             memebers the best possible experience. Feel free to contact us on
             any of our social media outlets or via the contact form below.
-          </p>
+          </div>
         </div>
         <div className="mockupContainer">
           <img src={gymImage} className="mockupImage" />
