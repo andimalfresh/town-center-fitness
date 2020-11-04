@@ -1,4 +1,6 @@
+@import "~video-react/styles/scss/video-react";
 .App {
+  
   height: 100vh;
   width: 100vw;
   text-align: center;
@@ -29,49 +31,12 @@
       text-align: left;
       flex-direction: column;
       font-size: 16pt;
-      background-color: #b0dcea;
+      background-color: white;
       padding: 50px;
       .blueWaveText {
         font-size: 12pt;
         color: #207ea9;
       }
-    }
-    .Wave-crest,
-    .Wave-crest2,
-    .Wave-crest3,
-    .Wave-crest4 {
-      z-index: 3;
-      height: 20px;
-    }
-    .Wave-crest {
-      width: 100%;
-      fill: #b0dcea;
-      padding: 0px;
-      margin: 0px;
-    }
-    .Wave-crest2 {
-      width: 100%;
-      fill: #b0dcea;
-      padding: 0px;
-      margin: 0px;
-      transform: scaleX(-1);
-    }
-    .Wave-crest3 {
-      display: inline;
-      width: 100%;
-      fill: #b0dcea;
-      padding: 0px;
-      margin: 0px;
-      /* flip vertically */
-      transform: scaleY(-1);
-    }
-    .Wave-crest4 {
-      display: inline;
-      width: 100%;
-      fill: #b0dcea;
-      padding: 0px;
-      margin: 0px;
-      transform: scaleX(-1);
     }
     .homeHeader {
       display: flex;
@@ -79,9 +44,9 @@
       background-color: White;
       background-size: cover;
       background-position: center;
-      height: 300px;
+      height: 350px;
       .tcfLogo {
-        height: 300px;
+        height: 350px;
       }
     }
   }

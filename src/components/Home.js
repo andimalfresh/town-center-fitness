@@ -1,11 +1,13 @@
-import React from "react";
-import workout from "./img/workout.svg";
-import gym1 from "./img/gymclipart1.svg";
-import gym2 from "./img/gymclipart2.svg";
-import gymLogo from "./img/TCF_CLEAN.svg";
-import mockup from "./img/tcf_mockup.jpg";
-import gymImage from "./img/gymImage.jpg";
-import Social from "./Social";
+import React from "react"
+import workout from "./img/workout.svg"
+import gym1 from "./img/gymclipart1.svg"
+import gym2 from "./img/gymclipart2.svg"
+import gymLogo from "./img/tc_logo.svg"
+import mockup from "./img/tcf_mockup.jpg"
+import gymImage from "./img/gymImage.jpg"
+import introVid from "./img/videos/facebook_cover.mp4"
+import Social from "./Social"
+import { Player } from "video-react"
 
 const Home = () => {
   return (
@@ -13,6 +15,16 @@ const Home = () => {
       <div className="pageContainer">
         <div className="homeHeader">
           <img src={gymLogo} className="tcfLogo" />
+        </div>
+        <div className="contextElement">
+          <img className="gymSvg" src={gym1} alt="test" />
+          <h2>ADD CATCHY HEADING</h2>
+          <Player
+            playsInline
+            poster="/assets/poster.png"
+            src={introVid}
+          />
+          <p className="blueWaveText">Grand Opening DIV WIth video and text</p>
         </div>
         <div className="contextElement">
           <img className="gymSvg" src={gym1} alt="test" />
