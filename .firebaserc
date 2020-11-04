@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "town-center-fitness"
+    "default": "town-center-fitness",
+    "staging": "town-center-fitness"
   }
 }

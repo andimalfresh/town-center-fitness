@@ -9,8 +9,7 @@ import introVid from "./img/videos/facebook_cover.mp4";
 import Social from "./Social";
 import { Player, LoadingSpinner } from "video-react";
 
-const vid =
-  "https://drive.google.com/file/d/17rRX3J4M-HOmuycjXmqtlcfsrecJjXRN/preview";
+const vid = "https://media.w3.org/2010/05/sintel/trailer_hd.mp4";
 
 const Home = () => {
   return (
@@ -74,9 +73,10 @@ const Home = () => {
             functional fitness equipment, spin classes and MSK coaching in the
             heart of Southwood. We practice current CDC guidelines for
             cleanileness and steralization ensuring our staff and guest stay
-            healthy and safe. 
+            healthy and safe. We love feedback to help deliver our guest and memebers the best
+            possible experience. Feel free to contact us on any of our social
+            media outlets or via the contact form below.
           </p>
-          <p>We are open to feedback to deliver our guest and memebers the best possible experience. Feel free to contact us on any of our social media outlets or via the contact form below.</p>
         </div>
         <div className="mockupContainer">
           <img src={gymImage} className="mockupImage" />
