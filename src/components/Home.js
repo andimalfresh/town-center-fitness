@@ -19,10 +19,7 @@ const Home = () => {
           <img src={gymLogo} className="tcfLogo" />
         </div>
         <div className="videoElement">
-          <Player fluid autoPlay src={vid}>
-            <LoadingSpinner />
-          </Player>
-          <p className="blueWaveText">
+        <p className="blueWaveText">
           <h2>Your New neightborhood Fitness Center</h2>
             Town Center Fitness is excited to announce its grand Opening
             December 5th ! Below you will find resources and information about
@@ -31,6 +28,10 @@ const Home = () => {
             using the contact form below, and we will be happy to answer any
             questions you make have.
           </p>
+          <Player fluid autoPlay src={vid}>
+            <LoadingSpinner />
+          </Player>
+
         </div>
         <div className="contextElement">
           <img className="gymSvg" src={gym1} alt="test" />
