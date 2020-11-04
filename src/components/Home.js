@@ -40,7 +40,7 @@ const Home = () => {
             While are remaining open to our members 24/7, we are currently
             making improvements for our December 5th, 2020 Grand Opening. We
             cant wait to show you all the our new improvments and rennovations
-            to offer you the best neightborhood fitness experience.
+            to offer you the best neighborhood fitness experience.
           </p>
         </div>
         <div className="mockupContainer">
