@@ -7,7 +7,7 @@ import facebook from "./img/icons/001-facebook.svg";
 import twitter from "./img/icons/002-twitter.svg";
 import linkedIn from "./img/icons/010-linkedin.svg";
 import youTube from "./img/icons/008-youtube.svg";
-import tcflogo from "./img/TCF_CLEAN.svg";
+import tcflogo from "./img/tc_logo.svg";
 
 const mailRoute = "https://tclnodemailer.herokuapp.com/send";
 
@@ -84,7 +84,7 @@ const Social = () => {
                     value={values.name}
                   />
                   <label className="errorLabel">
-                    {errors.message && touched.message && errors.message}
+                    {errors.name && touched.name && errors.name}
                   </label>
                   <label className="fieldLabel">Email</label>
                   <input
@@ -95,9 +95,9 @@ const Social = () => {
                     onBlur={handleBlur}
                     value={values.email}
                   />
-                  <label className="errorLabel">
-                    {errors.message && touched.message && errors.message}
-                  </label>
+                  
+                    {errors.email && touched.email}
+                
                   <label className="fieldLabel">Phone</label>
                   <input
                     placeholder="Phone #"
@@ -108,7 +108,7 @@ const Social = () => {
                     value={values.phone}
                   />
                   <label className="errorLabel">
-                    {errors.message && touched.message && errors.message}
+                    {errors.phone && touched.phone}
                   </label>
                   <label className="fieldLabel">Message</label>
                   <textarea
@@ -121,7 +121,7 @@ const Social = () => {
                     value={values.message}
                   />
                   <label className="errorLabel">
-                    {errors.message && touched.message && errors.message}
+                    {errors.message && touched.message}
                   </label>
                   <div className="submitButtonDiv">
                     <button

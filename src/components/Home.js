@@ -1,13 +1,15 @@
-import React from "react"
-import workout from "./img/workout.svg"
-import gym1 from "./img/gymclipart1.svg"
-import gym2 from "./img/gymclipart2.svg"
-import gymLogo from "./img/tc_logo.svg"
-import mockup from "./img/tcf_mockup.jpg"
-import gymImage from "./img/gymImage.jpg"
-import introVid from "./img/videos/facebook_cover.mp4"
-import Social from "./Social"
-import { Player } from "video-react"
+import React from "react";
+import workout from "./img/workout.svg";
+import gym1 from "./img/gymclipart1.svg";
+import gym2 from "./img/gymclipart2.svg";
+import gymLogo from "./img/tc_logo.svg";
+import mockup from "./img/tcf_mockup.jpg";
+import gymImage from "./img/gymImage.jpg";
+import introVid from "./img/videos/facebook_cover.mp4";
+import Social from "./Social";
+import { Player, LoadingSpinner } from "video-react";
+
+const vid = "http://media.w3.org/2010/05/bunny/trailer.mp4";
 
 const Home = () => {
   return (
@@ -16,20 +18,25 @@ const Home = () => {
         <div className="homeHeader">
           <img src={gymLogo} className="tcfLogo" />
         </div>
-        <div className="contextElement">
-          <img className="gymSvg" src={gym1} alt="test" />
-          <h2>ADD CATCHY HEADING</h2>
-          <Player
-            playsInline
-            poster="/assets/poster.png"
-            src={introVid}
-          />
-          <p className="blueWaveText">Grand Opening DIV WIth video and text</p>
+        <div className="videoElement">
+          <Player fluid autoPlay src={vid}>
+            <LoadingSpinner />
+          </Player>
+          <p className="blueWaveText">
+          <h2>Your New neightborhood Fitness Center</h2>
+            Town Center Fitness is excited to announce its grand Opening
+            December 5th ! Below you will find resources and information about
+            the developing changes and additions to your Southwood neightborhood
+            fitness center. Feel free to reach out to us on social media or
+            using the contact form below, and we will be happy to answer any
+            questions you make have.
+          </p>
         </div>
         <div className="contextElement">
           <img className="gymSvg" src={gym1} alt="test" />
-          <h2>ADD CATCHY HEADING</h2>
+
           <p className="blueWaveText">
+            <h2>Lets Tell Whats Going On </h2>
             Town Center Fitness is Southwood's newest modern gym working in
             colloboration with MSK industry leaders JointStrong. The fitness
             center offers 24 hour access to top of the line equiptment, weekly
@@ -39,22 +46,32 @@ const Home = () => {
             in the new you.
           </p>
         </div>
-        <div className="contextElement">
-          <img className="gymSvg" src={workout} alt="test" />
-          <h2>HERE WHEN YOU NEED US</h2>
-          <p className="blueWaveText">
-            Something about 24 hour access and accessibility, online classes and
-            jS being there for you whenever you need it.
-          </p>
-        </div>
         <div className="mockupContainer">
           <img src={mockup} className="mockupImage" />
         </div>
 
         <div className="contextElement">
-          <img className="gymSvg" src={gym2} alt="test" />
-          <h2>SOME OTHER CLICHE STATEMENT</h2>
           <p className="blueWaveText">
+          <h2>New Look, New Classes, New Support</h2>
+            Town Center Fitness is Southwood's newest modern gym working in
+            colloboration with MSK industry leaders JointStrong. The fitness
+            center offers 24 hour access to top of the line equiptment, weekly
+            classes to fit all scheules both virtual and in person as on site
+            MSK and mobility coaching. Stop by, give us a call or send us a
+            message and see how Town Center Fitness can help bring out the best
+            in the new you.
+          </p>
+        </div>
+
+        <div className="videoElement">
+          <Player src={vid}>
+            <LoadingSpinner />
+          </Player>
+        </div>
+
+        <div className="contextElement">
+          <p className="blueWaveText">
+          <h2>We Would Love to Hear From You</h2>
             Our facility provides a full gym with weight machines, free weights,
             functional fitness equipment, spin classes and MSK coaching in the
             heart of Southwood. We practice current CDC guidelines for
