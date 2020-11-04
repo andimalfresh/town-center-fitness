@@ -8,7 +8,7 @@
   a:link,
   a:visited {
     text-decoration: none;
-    color: #207ea9;
+    color: #283f3b;
   }
   .pageContainer {
     display: flex;
@@ -16,7 +16,8 @@
     flex-direction: column;
     text-align: left;
     .gymSvg {
-      max-height: 200px;
+      padding-top: 25px; ;
+      max-height: 225px;
     }
     .mockupContainer {
       display: flex;
@@ -33,8 +34,8 @@
       font-size: 16pt;
       background-color: white;
       .blueWaveText {
-        font-size: 12pt;
-        color: #207ea9;
+        font-size: 14pt;
+        color: #283f3b;
         padding: 50px;
       }
     }
@@ -47,6 +48,7 @@
       height: 350px;
       .tcfLogo {
         height: 350px;
+        padding: 5px;
       }
     }
   }

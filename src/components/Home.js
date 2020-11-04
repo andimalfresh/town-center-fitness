@@ -18,7 +18,7 @@ const Home = () => {
         <div className="homeHeader">
           <img src={gymLogo} className="tcfLogo" />
         </div>
-        <div className="videoElement">
+        <div className="videoElement" style={{ backgroundColor: "#CCF2F5" }}>
           <p className="blueWaveText">
             <h2>Your New Southwood Fitness Center</h2>
             Town Center Fitness is excited to announce its grand Opening
@@ -32,7 +32,7 @@ const Home = () => {
             <LoadingSpinner />
           </Player>
         </div>
-        <div className="contextElement">
+        <div className="contextElement" style={{ backgroundColor: "#E2DFDF" }}>
           <img className="gymSvg" src={gym1} alt="test" />
 
           <p className="blueWaveText">
@@ -47,7 +47,7 @@ const Home = () => {
           <img src={mockup} className="mockupImage" />
         </div>
 
-        <div className="contextElement">
+        <div className="contextElement" style={{ backgroundColor: "#CCF2F5" }}>
           <p className="blueWaveText">
             <h2>New Look, New Classes, New Support</h2>
             Town Center Fitness is Southwood's newest modern gym working in
@@ -66,16 +66,16 @@ const Home = () => {
           </Player>
         </div>
 
-        <div className="contextElement">
+        <div className="contextElement" style={{ backgroundColor: "#DEEad7" }}>
           <p className="blueWaveText">
             <h2>We Would Love to Hear From You</h2>
             Our facility provides a full gym with weight machines, free weights,
             functional fitness equipment, spin classes and MSK coaching in the
             heart of Southwood. We practice current CDC guidelines for
             cleanileness and steralization ensuring our staff and guest stay
-            healthy and safe. We love feedback to help deliver our guest and memebers the best
-            possible experience. Feel free to contact us on any of our social
-            media outlets or via the contact form below.
+            healthy and safe. We love feedback to help deliver our guest and
+            memebers the best possible experience. Feel free to contact us on
+            any of our social media outlets or via the contact form below.
           </p>
         </div>
         <div className="mockupContainer">

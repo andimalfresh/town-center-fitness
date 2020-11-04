@@ -146,7 +146,7 @@ const Social = () => {
               <a href="/">HOME </a>
             </div>
             <div className="socialButton">
-              <a>CONTACT</a>
+              <a onClick={() => setModalShow(true)}>CONTACT</a>
             </div>
           </div>
           <div className="socialIcons">
