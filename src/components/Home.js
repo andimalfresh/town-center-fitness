@@ -9,7 +9,9 @@ import introVid from "./img/videos/facebook_cover.mp4";
 import Social from "./Social";
 import { Player, LoadingSpinner } from "video-react";
 
-const vid = "https://media.w3.org/2010/05/sintel/trailer_hd.mp4";
+
+const vid1 = "https://town-center-fitness.s3.amazonaws.com/videos/facebook_cover.mp4";
+const vid2 = "https://town-center-fitness.s3.amazonaws.com/videos/content-feed.mp4";
 
 const Home = () => {
   return (
@@ -28,7 +30,7 @@ const Home = () => {
             using the contact form below, and we will be happy to answer any
             questions you make have.
           </div>
-          <Player fluid autoPlay src={vid}>
+          <Player fluid autoPlay src={vid1}>
             <LoadingSpinner />
           </Player>
         </div>
@@ -61,7 +63,7 @@ const Home = () => {
         </div>
 
         <div className="videoElement">
-          <Player src={vid}>
+          <Player src={vid2}>
             <LoadingSpinner />
           </Player>
         </div>
