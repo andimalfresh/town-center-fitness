@@ -63,7 +63,7 @@ const Home = () => {
         </div>
 
         <div className="videoElement">
-          <Player src="./videos/content-feed.mp4">
+          <Player src="./videos/facebook_cover.mp4">
             <LoadingSpinner />
           </Player>
         </div>
