@@ -7,7 +7,7 @@ import mockup from "./img/tcf_mockup.jpg";
 import gymImage from "./img/gymImage.jpg";
 // import introVid from "./videos/content-feed.mp4";
 import Social from "./Social";
-import { Player, LoadingSpinner } from "video-react";
+import { Player, LoadingSpinner} from "video-react";
 
 
 const vid1 = "https://town-center-fitness.s3.amazonaws.com/videos/facebook_cover.mp4";
@@ -30,8 +30,8 @@ const Home = () => {
             using the contact form below, and we will be happy to answer any
             questions you make have.
           </div>
-          <Player fluid autoPlay src="./videos/content-feed.mp4">
-            <LoadingSpinner />
+          <Player fluid autoPlay >
+            <source src="./videos/content-feed.mp4" />
           </Player>
         </div>
         <div className="contextElement" style={{ backgroundColor: "#E2DFDF" }}>
@@ -63,8 +63,8 @@ const Home = () => {
         </div>
 
         <div className="videoElement">
-          <Player src="./videos/facebook_cover.mp4">
-            <LoadingSpinner />
+          <Player>
+            <source  src="./videos/facebook_cover.mp4" />
           </Player>
         </div>
 
