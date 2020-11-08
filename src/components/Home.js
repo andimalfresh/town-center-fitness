@@ -5,7 +5,7 @@ import gym2 from "./img/gymclipart2.svg";
 import gymLogo from "./img/tc_logo.svg";
 import mockup from "./img/tcf_mockup.jpg";
 import gymImage from "./img/gymImage.jpg";
-import introVid from "./img/videos/facebook_cover.mp4";
+import introVid from "./videos/content-feed.mp4";
 import Social from "./Social";
 import { Player, LoadingSpinner } from "video-react";
 
@@ -30,7 +30,7 @@ const Home = () => {
             using the contact form below, and we will be happy to answer any
             questions you make have.
           </div>
-          <Player fluid autoPlay src={vid1}>
+          <Player fluid autoPlay src={introVid}>
             <LoadingSpinner />
           </Player>
         </div>
@@ -63,7 +63,7 @@ const Home = () => {
         </div>
 
         <div className="videoElement">
-          <Player src={vid2}>
+          <Player src={introVid}>
             <LoadingSpinner />
           </Player>
         </div>
