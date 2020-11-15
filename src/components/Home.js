@@ -8,12 +8,7 @@ import gymImage from "./img/gymImage.jpg";
 import introVid from "./videos/content-feed1.mp4";
 import introVid2 from "./videos/facebook_cover1.mp4";
 import Social from "./Social";
-import { Player, LoadingSpinner} from "video-react";
-import ReactPlayer from 'react-player'
-
-
-const vid1 = "https://town-center-fitness.s3.amazonaws.com/videos/facebook_cover.mp4";
-const vid2 = "https://town-center-fitness.s3.amazonaws.com/videos/content-feed.mp4";
+import { Player} from "video-react";
 
 const Home = () => {
   return (
@@ -35,7 +30,6 @@ const Home = () => {
           <Player fluid autoPlay >
             <source src={introVid} />
           </Player> 
-          {/* <ReactPlayer url={introVid} /> */}
         </div>
         <div className="contextElement" style={{ backgroundColor: "#E2DFDF" }}>
           <img className="gymSvg" src={gym1} alt="test" />
