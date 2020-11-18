@@ -27,7 +27,7 @@ const Home = () => {
             using the contact form below, and we will be happy to answer any
             questions you make have.
           </div>
-          <Player fluid autoPlay >
+          <Player fluid autoPlay muted >
             <source src={introVid} />
           </Player> 
         </div>
